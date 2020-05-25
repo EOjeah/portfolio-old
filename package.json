@@ -6,6 +6,17 @@
   "scripts": {
     "format": "prettier-eslint --write $PWD/'src/**/*.[jt]s?(x)' && eslint --fix ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run format",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EOjeah/portfolio.git"
@@ -35,6 +46,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
     "prettier-eslint": "^10.1.1",
     "prettier-eslint-cli": "^5.0.0"
   },
