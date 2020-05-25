@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "repository to create a website for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOjeah/portfolio.git"
+  },
+  "keywords": ["elasticsearch", "devops", "developer", "react", "node", "python", "javascript"],
+  "author": "Emmanuel Ojeah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EOjeah/portfolio/issues"
+  },
+  "homepage": "https://github.com/EOjeah/portfolio#readme"
+}
