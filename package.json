@@ -4,7 +4,7 @@
   "description": "repository to create a website for my portfolio",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm run format",
+    "prebuild": "npm run format && webpack",
     "build": "webpack-dev-server --open",
     "format": "prettier-eslint --write $PWD/'src/**/*.[jt]s?(x)' && eslint --fix ."
   },
@@ -61,6 +61,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "^3.9.3"
